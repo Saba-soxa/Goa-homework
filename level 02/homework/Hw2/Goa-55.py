@@ -10,6 +10,7 @@ forward(275)
 left(90)
 forward(250)
 left(90)
+
 forward(50)
 right(90)
 forward(200)
@@ -25,6 +26,7 @@ left(90)
 forward(200)
 right(90)
 forward(53)
+
 
 
 exitonclick()
