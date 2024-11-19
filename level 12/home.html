@@ -1,0 +1,194 @@
+# N1
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .header {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .total-row td {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">Product List</div>
+
+<table board="2">
+    <tr>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Extended</th>
+    </tr>
+    <tr>
+        <td>Hard Disk</td>
+        <td>1</td>
+        <td>500$</td>
+        <td>400$</td>
+    </tr>
+    <tr>
+        <td>Cd Drive</td>
+        <td>1</td>
+        <td>200$</td>
+        <td>500$</td>
+    </tr>
+    <tr>
+        <td>Cds</td>
+        <td>10</td>
+        <td>20$</td>
+        <td>50$</td>
+    </tr>
+    <tr class="total-row">
+        <td colspan="3">Total Amount</td>
+        <td>950$</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+# N2
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Seminar Schedule</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Seminar Schedule</h2>
+
+<table>
+    <tr>
+        <th rowspan="2">Day</th>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2">Topic</th>
+    </tr>
+    <tr>
+        <th>Begin</th>
+        <th>End</th>
+    </tr>
+    <tr>
+        <td>Monday</td>
+        <td>8:00 a.m.</td>
+        <td>5:00 p.m.</td>
+        <td>Introduction to XML</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Tuesday</td>
+        <td>8:00 a.m.</td>
+        <td>11:00 a.m.</td>
+        <td>Validity: DTD and Relax NG</td>
+    </tr>
+    <tr>
+        <td>11:00 a.m.</td>
+        <td>2:00 p.m.</td>
+        <td>XPath</td>
+    </tr>
+    <tr>
+        <td>2:00 p.m.</td>
+        <td>5:00 p.m.</td>
+        <td>XSL Transformations</td>
+    </tr>
+    <tr>
+        <td>Wednesday</td>
+        <td>8:00 a.m.</td>
+        <td>12:00 p.m.</td>
+        <td>XSL Formatting Objects</td>
+    </tr>
+</table>
+
+</body>
+</html>
+
+# N3
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Info</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        caption {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .note {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <caption>Product Info</caption>
+    <tr>
+        <th>Product</th>
+        <th>Flavors</th>
+    </tr>
+    <tr>
+        <td rowspan="3">Milk</td>
+        <td>Almond</td>
+    </tr>
+    <tr>
+        <td>Mango</td>
+    </tr>
+    <tr>
+        <td>Chocolate</td>
+    </tr>
+</table>
+<div class="note">These are exclusive flavors</div>
+
+</body>
+</html>
+
