@@ -1,0 +1,51 @@
+body {
+    background-color: #3c8d17;
+    margin: 0;
+    font-family: Arial, sams-serif;
+    line-height: 1.6;
+}
+
+
+header {
+   background: #ff0000;
+   color: #000000;
+   padding: 10px  20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+     color: #2600ff;
+     text-decoration: none;
+     padding: 5px 10px;
+}
+
+header ul li a:hover {
+     background: #555;
+     border-radius: 5px;
+}
+
+
+.hero h1 {
+     font-size: 2.5em;
+     margin-bottom: 20px;
+}
+
