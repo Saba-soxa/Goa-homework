@@ -1,0 +1,39 @@
+.heading-2 {
+     color: blue;
+
+}
+
+#head-1 {
+    color: brown;
+}
+
+#head-2 {
+    color: burlywood;
+}
+
+#head-3 {
+    color: cadetblue;
+}
+
+#head-4 {
+    color: chartreuse;
+}
+
+#head-5 {
+    color: chocolate;
+}
+
+
+
+.colored-text {
+    color: rgb(255, 0, 0); /* გარდაქმნის ტექსტის ფერს ლურჯად */
+}
+
+
+.text-width {
+    font-size: 24px; /* ცვლის ტექსტის ზომას 24px */
+}
+
+.underlined-text {
+    text-decoration: underline; /* განსაზღვრავს ტექსტის ხაზის ქვეშ ყოფნას */
+}

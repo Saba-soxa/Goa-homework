@@ -1,0 +1,13 @@
+
+.colored-text {
+    color: rgb(55, 255, 0); 
+}
+
+
+.text-width {
+    font-size: 24px; 
+}
+
+.underlined-text {
+    text-decoration: underline; 
+}
