@@ -1,0 +1,21 @@
+.box1, .box2 {
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(57, 55, 55);
+    border-radius: 15px;
+    background-color: rgb(98, 158, 179);
+}
+
+.box1 {
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    bottom: 50px;
+}
+
+.box2 {
+    top: 150px;
+    left: 500px;
+    bottom: 100px;
+    background-color: lightgreen;
+}
