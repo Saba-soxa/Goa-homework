@@ -3,7 +3,7 @@
 def make_negative( number ):
     if number > 0:
         return - number
-    else
+    else:
         return number
         
 # N2
@@ -34,7 +34,7 @@ def switch_it_up(number):
         return "eight"
     elif number == 9:
         return "nine"
-    return words [number]
+    return words[number]
 
 
 # N4
