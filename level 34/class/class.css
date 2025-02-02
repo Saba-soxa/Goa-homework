@@ -1,0 +1,30 @@
+a:link {
+    color: blue; 
+    font-family:cursive
+}
+  
+a:visited {
+    color: purple;  
+    font-size: large;
+}
+  
+div {
+    width: 300;
+    height: 150;
+    background-color: blue;
+    color: aqua;
+    font-family: cursive;
+    text-align: center;
+}
+
+
+div:hover {
+    background-color: chocolate;
+    color: red;  
+    text-decoration: underline;
+}
+  
+a:active {
+    color: green;  
+}   
+  

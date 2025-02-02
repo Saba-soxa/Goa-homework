@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    width: 75%;
+    border-collapse: collapse;
+}
+th {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+td {
+    padding: 10px;
+}
+tr:nth-child(1) { background-color: #3498db; color: white; }
+tr:nth-child(2) { background-color: #2ecc71; color: white; }
+tr:nth-child(3) { background-color: #f1c40f; color: black; }
+tr:nth-child(4) { background-color: #e74c3c; color: white; }
+tr:nth-child(5) { background-color: #5dade2; color: white; }
