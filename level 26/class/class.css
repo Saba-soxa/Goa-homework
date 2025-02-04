@@ -1,0 +1,20 @@
+#Lorem1 {
+    color:rgb(203, 146, 158);
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-family: cursive;
+}
+
+#Lorem2 {
+    color:rgb(54, 54, 99);
+    font-family: cursive;
+    text-align: center;
+    word-spacing: 15px;
+}
+
+#Lorem3 {
+    color:brown;
+    font-family: cursive;
+    text-shadow: 10px , 20px , 30px , bisque;
+    line-height: 2;
+}
