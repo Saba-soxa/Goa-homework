@@ -1,0 +1,86 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f9fc;
+    color: #333;
+}
+header {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    top: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ffdd57;
+}
+section {
+    padding: 120px 20px 20px 20px;
+}
+h2 {
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6a11cb;
+}
+.relative-block {
+    position: relative;
+    top: 40px;
+    left: 40px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.relative-block:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.absolute-block {
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.sticky-element {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}

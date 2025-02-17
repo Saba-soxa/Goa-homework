@@ -1,0 +1,43 @@
+.inline {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+}
+
+.block {
+    background-color: lightcoral;
+    width: 150;
+    height: 150; 
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 150px;
+    height: 100px;
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px;
+}
+
+
+
+.element {
+    -webkit-box-decoration-break: clone;
+    -moz-box-decoration-break: clone;
+    box-decoration-break: clone;
+  
+    -webkit-text-emphasis: filled dot;
+    -moz-text-emphasis: filled dot;
+    text-emphasis: filled dot;
+  
+    -webkit-text-orientation: upright;
+    -moz-text-orientation: upright;
+    text-orientation: upright;
+}
+  

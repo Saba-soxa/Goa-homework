@@ -1,0 +1,27 @@
+.blur-box {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+
+.scroll-container {
+    scroll-snap-type: x mandatory;
+    -webkit-scroll-snap-type: x mandatory;
+}
+
+
+.text {
+    -webkit-text-stroke: 1px black;
+}
+
+
+.clip {
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+
+.masked {
+    mask-image: linear-gradient(black, transparent);
+    -webkit-mask-image: linear-gradient(black, transparent);
+}
