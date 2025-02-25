@@ -1,0 +1,17 @@
+div{
+        width: 150px;
+        height: 150px;
+        background-color: #3498db;
+        display: flex;
+
+        transition: 2s;
+        transform: translate(20px,50px) ;
+        transform: rotate(60deg, 30dex);
+        transform: scale(1,2);
+        transform: skew(300deg);
+}
+
+
+
+
+
