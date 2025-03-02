@@ -1,0 +1,23 @@
+
+
+
+div {
+    width: 200px;
+    height: 150px;
+    background-color: aqua;
+    color: aliceblue;
+    font-family: cursive;
+    text-align: center;
+
+    animation-name: soxa 6s cubic-bizier(5, 0, 0, 5) 0 infinite alternate-reverse forwards;
+}
+
+
+@keyframes soxa{
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color: chartreuse;
+    }
+}
