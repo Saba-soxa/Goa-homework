@@ -1,0 +1,50 @@
+:root {
+    --color: #e74c3c;
+    --font-size: 24px;
+    --font-size: 18px;
+    --letter-spacing: 2px;
+    --padding-size: 10px;
+    --margin-size: 15px;
+    --transition-time: 0.3s;
+}
+
+.box1 {
+    color: var(--color);
+    font-size: var(--font-size);
+    letter-spacing: var(--letter-spacing);
+    display: block;
+    padding: var(--padding-size);
+     margin: var(--margin-size);
+    position: relative;
+    transition: transform var(--transition-time);
+}
+       
+        
+
+.box2 {
+    color: white;
+    background-color: var(--color);
+    font-size: var(--font-size-medium);
+    letter-spacing: normal;
+    display: inline;
+    padding: var(--padding-size);
+    margin: var(--margin-size);
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transition: background-color var(--transition-time);
+        }
+
+.box3 {
+    color: black;
+    background-color: lightgray;
+    font-size: var(--font-size-medium);
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: var(--padding-size);
+    margin: var(--margin-size);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: var(--transition-time);
+}

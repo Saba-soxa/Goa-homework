@@ -40,3 +40,44 @@ def whatday(num):
         case _ :
             return "Wrong, please enter a number between 1 and 7"
         
+
+
+
+
+# N4
+
+def same_case(a, b): 
+    if a.isalpha() and b.isalpha():
+        if (a.islower() and b.islower()) or (a.isupper() and b.isupper()):
+            return 1
+        else:
+            return 0
+    else:
+        return -1
+
+
+    
+
+# N5
+
+def count_positives_sum_negatives(arr):
+    if not arr: return []
+    pos = 0
+    neg = 0
+    for x in arr:
+        if x > 0:
+            pos += 1
+        if x < 0:
+            neg += x
+    return [pos, neg]
+
+
+
+
+# N6
+
+def find_multiples(integer, limit):
+    multiples = []
+    for i in range(integer, limit + 1, integer):
+        multiples.append(i)
+    return multiples
