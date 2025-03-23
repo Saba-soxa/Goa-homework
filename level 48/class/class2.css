@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 200px 1fr 60px;
+    grid-template-areas:
+        "aside header"
+        "aside sections"
+        "aside content"
+        "aside footer";
+    height: 100vh;
+}
+header {
+    grid-area: header;
+    background: #85b6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside {
+    grid-area: aside;
+    background: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.sections {
+    grid-area: sections;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.sections div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #6699cc;
+    height: 100%;
+}
+
+.sections .sect1 { 
+    background: #a3c2f2; 
+}
+
+.sections .sect2 {
+     background: #547aa5; 
+    }
+
+.sections .sect3 {
+     background: #5f94cd; 
+    }
+
+main {
+    grid-area: content;
+    background: #7fa6d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    grid-area: footer;
+    background: #4a77a8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
