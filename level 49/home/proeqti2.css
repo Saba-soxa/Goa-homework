@@ -1,0 +1,91 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+
+.parent {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 25px;
+    margin: 140px auto;
+    max-width: 550px;
+    border-radius: 10px;
+}
+.parent .child1 img {
+    min-width: 250px;
+    width: 104%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.parent .child2 {
+    margin-top: 25px;
+    padding-right: 20px;
+    color: var(--text-color);
+}
+
+.parent .child2 h5 {
+    font-weight: 500;
+}
+
+.parent .child2 h1 {
+    font-family: "Fraunces"sans-serif;
+    font-weight: 700;
+    margin-right: 20px;
+    line-height: 1;
+    padding: 10px 0 20px;
+    color: var(--title-color);
+
+}
+
+.parent .child2 h2 {
+    font-family: "Fraunces" sans-serif;
+    padding: 20px 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.parent .child2 h2 span {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: rgb(0, 255, 68);
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+
+.parent .child2 button {
+    background-color: green;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 12px;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+
+.parent .child2 button img {
+    margin-right: 10px;
+}
+
+
+#price {
+    color: var(--primary color);
+}
