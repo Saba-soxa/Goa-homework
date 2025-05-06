@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+let score1 = parseFloat(prompt("შეიყვანე პირველი საგნის ქულა:"));
+let score2 = parseFloat(prompt("შეიყვანე მეორე საგნის ქულა:"));
+let score3 = parseFloat(prompt("შეიყვანე მესამე საგნის ქულა:"));
+
+let average = (score1 + score2 + score3) / 3;
+
+if (average > 90 && average < 100) {
+    console.log("A");
+} else if (average > 70 && average < 80) {
+    console.log("B");
+} else if (average > 50 && average < 65) {
+    console.log("C");
+} else if (average > 25 && average < 50) {
+    console.log("D");
+} else if (average < 25) {
+    console.log("წადი ისწავლე და მერე მოდი");
+} else {
+    console.log("შეიყვანე სწორად ქულები");
+}
+
+    </script>
+</body>
+</html>

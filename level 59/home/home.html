@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+// N1      
+let age1 = parseInt(prompt("შეიყვანეთ ასაკი:"));
+let gender = prompt("შეიყვანეთ სქესი (კაცი/ქალი):").toLowerCase();
+let income = parseFloat(prompt("შეიყვანეთ შემოსავალი:"));
+
+
+if (age1 >= 18) {
+    if (gender === "ქალი") {
+        if (income > 5000) {
+            alert("თქვენი ფინანსური მდგომარეობა უზრუნველყოფილია");
+        } else if (income > 3000) {
+            alert("ფინანსური პოზიცია სტაბილურია. უკეთესი გეგმაა საჭირო.");
+        } else {
+            alert("გჭირდებათ ფინანსური გეგმის გაუმჯობესება");
+        }
+    } else if (gender === "კაცი") {
+        if (income > 6000) {
+            alert("თქვენ მზად ხართ ინვესტიციებისთვის!");
+        } else if (income > 4000) {
+            alert("შემოსავალი სტაბილურია");
+        } else {
+            alert("გჭირდებათ ფინანსური გეგმის გაუმჯობესება");
+        }
+    } else {
+        alert("გთხოვთ, სწორად შეიყვანოთ სქესი (კაცი ან ქალი)");
+    }
+} else {
+    alert("მიიღეთ განათლება და შემდეგ დაიწყეთ ინვესტიცია");
+}
+
+
+// N2
+let age = parseInt(prompt("Enter your age:"));
+
+
+if (age <= 19) {
+    console.log("Take your kindle");
+}
+
+// N3
+
+
+let color = prompt("Enter a color:").toLowerCase();
+
+if (color === "red") {
+    console.log(1);
+} else if (color === "green") {
+    console.log(2);
+} else if (color === "black") {
+    console.log(3);
+} else {
+    console.log("unknown");
+}
+
+// N4
+
+let number = parseInt(prompt("შეიყვანეთ რიცხვი:"));
+
+if (number % 2 === 0) {
+    console.log("ლუწი რიცხვია");
+} else {
+    console.log("კენტი რიცხვია");
+}
+
+
+// N5
+let temp = parseFloat(prompt("შეიყვანეთ ტემპერატურა ცელსიუსში:"));
+
+if (temp < 10) {
+    console.log("ცივა");
+} else if (temp <= 25) {
+    console.log("ზომიერი ტემპერატურაა");
+} else {
+    console.log("ცხელა");
+}
+
+// N6
+
+let score = parseInt(prompt("შეიყვანეთ ქულა (0-100):"));
+
+if (score >= 90 && score <= 100) {
+    console.log("შეფასება: A");
+} else if (score >= 80) {
+    console.log("შეფასება: B");
+} else if (score >= 70) {
+    console.log("შეფასება: C");
+} else if (score >= 60) {
+    console.log("შეფასება: D");
+} else if (score >= 0) {
+    console.log("შეფასება: F");
+} else {
+    console.log("არასწორი ქულა");
+}
+
+
+// N7
+
+// Sololearn
+    </script>
+</body>
+</html>
