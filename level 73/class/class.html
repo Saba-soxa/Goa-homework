@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Date and Time Example</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    .date-box {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Date and Time Example</h1>
+
+  <div class="date-box">
+    <strong>Current Date and Time:</strong>
+    <p id="current"></p>
+  </div>
+
+  <div class="date-box">
+    <strong>Modified Date and Time:</strong>
+    <p id="modified"></p>
+  </div>
+
+  <script>
+    // 1. მიმდინარე თარიღის ობიექტი
+    const now = new Date();
+
+    // 2. გამოიტანე ვებგვერდზე
+    document.getElementById("current").textContent = now.toString();
+
+    // 3. თარიღის შეცვლა: დავამატოთ 5 დღე და 3 საათი
+    now.setDate(now.getDate() + 5);      // დღეში +5
+    now.setHours(now.getHours() + 3);    // საათში +3
+
+    // 4. გამოიტანე შეცვლილი თარიღი
+    document.getElementById("modified").textContent = now.toString();
+  </script>
+
+</body>
+</html>
