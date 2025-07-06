@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>დივის ზომის კონტროლი</title>
+  <style>
+    .box {
+      width: 150px;
+      height: 150px;
+      background-color: #4CAF50;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .big {
+      width: 300px;
+      height: 300px;
+    }
+
+    .small {
+      width: 100px;
+      height: 100px;
+    }
+
+    .button-container {
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      background-color: #007BFF;
+      color: white;
+    }
+
+    p {
+      margin: 5px 0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="button-container">
+    <p>დააწკაპუნე ზომის გასაზრდელად:</p>
+    <button onclick="increaseSize()">გადიდება</button>
+    
+    <p>დააწკაპუნე ზომის შესამცირებლად:</p>
+    <button onclick="decreaseSize()">შემცირება</button>
+  </div>
+
+  <div id="myBox" class="box"></div>
+
+  <script>
+    const box = document.getElementById("myBox");
+
+    function increaseSize() {
+      box.classList.remove("small");
+      box.classList.add("big");
+    }
+
+    function decreaseSize() {
+      box.classList.remove("big");
+      box.classList.add("small");
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>სურათის შეცვლა</title>
+</head>
+<body>
+
+  <!-- სურათის ელემენტი -->
+  <img id="myImage" src="https://via.placeholder.com/300x200.png?text=Image+1" alt="სურათი" style="cursor:pointer;">
+
+  <!-- JS ფაილის შემოტანა -->
+  <script src="class.js"></script>
+
+</body>
+</html>

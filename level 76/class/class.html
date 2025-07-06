@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Example</title>
+</head>
+<body>
+
+<script>
+  // 1. შექმნა ღილაკის
+  const button = document.createElement("button");
+  button.textContent = "Click Me!";
+
+  // 2. სტილის შეცვლა
+  button.style.backgroundColor = "blue";
+  button.style.color = "white";
+  button.style.fontSize = "20px";
+  button.style.padding = "10px 20px";
+  button.style.borderRadius = "8px";
+  button.style.border = "none";
+  button.style.cursor = "pointer";
+
+  // 3. ღილაკის დამატება body-ში
+  document.body.appendChild(button);
+
+  // 4. ღილაკის ამოშლა ვებსაიტიდან 3 წამის შემდეგ
+  setTimeout(() => {
+    button.remove();
+  }, 3000);
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>სურათების ჩვენება ღილაკებით</title>
+  <style>
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #imageContainer img {
+      max-width: 300px;
+      margin-top: 20px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="showImage(1)">სურათი 1</button>
+  <button onclick="showImage(2)">სურათი 2</button>
+  <button onclick="showImage(3)">სურათი 3</button>
+
+  <div id="imageContainer"></div>
+
+  <script>
+    function showImage(number) {
+      const imageUrls = {
+        1: "https://via.placeholder.com/300x200.png?text=Image+1",
+        2: "https://via.placeholder.com/300x200.png?text=Image+2",
+        3: "https://via.placeholder.com/300x200.png?text=Image+3"
+      };
+
+      const container = document.getElementById("imageContainer");
+      container.innerHTML = `<img src="${imageUrls[number]}" alt="სურათი ${number}">`;
+    }
+  </script>
+
+</body>
+</html>

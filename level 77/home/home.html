@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Class Manipulation</title>
+  <style>
+    .highlight {
+      background-color: yellow;
+    }
+
+    .active {
+      border: 2px solid green;
+    }
+
+    .important {
+      font-weight: bold;
+      color: red;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Add / Remove Class -->
+  <div id="myDiv">Div for add/remove class</div>
+
+  <!-- Toggle Class -->
+  <button id="toggleButton">Toggle Class</button>
+  <div id="targetDiv">Target Div</div>
+
+  <!-- Check for Class -->
+  <p id="checkParagraph" class="important">Check this paragraph</p>
+
+  <!-- Replace a Class -->
+  <div id="replaceDiv" class="red">Replace my class</div>
+
+  <!-- Item Method -->
+  <div id="itemDiv" class="class1 class2 class3">I have multiple classes</div>
+
+  <script>
+    // 1. Add a Class
+    const myDiv = document.getElementById("myDiv");
+    myDiv.classList.add("highlight");
+
+    // 2. Remove a Class
+    myDiv.classList.remove("highlight");
+
+    // 3. Toggle a Class
+    const toggleButton = document.getElementById("toggleButton");
+    const targetDiv = document.getElementById("targetDiv");
+
+    toggleButton.addEventListener("click", () => {
+      targetDiv.classList.toggle("active");
+    });
+
+    // 4. Check for a Class
+    const checkParagraph = document.getElementById("checkParagraph");
+    const hasImportant = checkParagraph.classList.contains("important");
+    console.log("Does <p> have 'important' class?", hasImportant); // true
+
+    // 5. Replace a Class
+    const replaceDiv = document.getElementById("replaceDiv");
+    replaceDiv.classList.replace("red", "blue");
+
+    // 6. Use item() to get second class (index starts at 0)
+    const itemDiv = document.getElementById("itemDiv");
+    const secondClass = itemDiv.classList.item(1);
+    console.log("Second class of #itemDiv is:", secondClass); // "class2"
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation Tasks</title>
+</head>
+<body>
+
+  <!-- DOM Manipulation: ul with li elements -->
+  <ul id="taskList">
+    <li>Task 1</li>
+    <li>Task 2</li>
+    <li>Task 3</li>
+  </ul>
+
+  <!-- Change Element Text -->
+  <p id="myParagraph">Placeholder paragraph text.</p>
+
+  <!-- Change Element Style -->
+  <div id="styledDiv">Style me with JavaScript</div>
+
+  <!-- Create and Append Element -->
+  <ul id="myList">
+    <li>Existing item</li>
+  </ul>
+
+  <!-- Remove an Element -->
+  <ul id="removableList">
+    <li>Item A</li>
+    <li>Item B</li> <!-- This will be removed -->
+    <li>Item C</li>
+  </ul>
+
+  <!-- Modify Element Attributes -->
+  <img id="myImage" src="https://via.placeholder.com/150" alt="Placeholder image">
+
+  <script>
+    // --- DOM Manipulation ---
+    const taskList = document.getElementById("taskList");
+
+    // Add a new li to the end
+    const newLi = document.createElement("li");
+    newLi.textContent = "New Task";
+    taskList.appendChild(newLi);
+
+    // Remove the first li
+    taskList.removeChild(taskList.firstElementChild);
+
+    // Change the text of the second li (now first, due to removal)
+    taskList.children[1].textContent = "Updated Task 2";
+
+    // --- Change Element Text ---
+    const paragraph = document.getElementById("myParagraph");
+    paragraph.textContent = "New text content!";
+
+    // --- Change Element Style ---
+    const styledDiv = document.getElementById("styledDiv");
+    styledDiv.style.backgroundColor = "lightblue";
+    styledDiv.style.color = "darkblue";
+
+    // --- Create and Append an Element ---
+    const myList = document.getElementById("myList");
+    const newListItem = document.createElement("li");
+    newListItem.textContent = "New list item";
+    myList.appendChild(newListItem);
+
+    // --- Remove an Element ---
+    const removableList = document.getElementById("removableList");
+    const secondLi = removableList.children[1];
+    removableList.removeChild(secondLi);
+
+    // --- Modify Element Attributes ---
+    const image = document.getElementById("myImage");
+    image.src = "https://via.placeholder.com/200x150?text=Updated";
+    image.alt = "Updated image";
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <title>დავალებები</title>
+  <style>
+    #colorBox, #toggleText, #counterBox {
+      margin: 10px 0;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+    #colorBox {
+      background-color: lightgray;
+    }
+    #toggleText {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. ფერის შემთხვევით შეცვლა -->
+  <h2>1. ფერის შეცვლა</h2>
+  <button id="colorBtn">შეცვალე ფერი</button>
+  <div id="colorBox">მე ვარ ფერადი დივი</div>
+
+  <!-- 2. სურათის შეცვლა -->
+  <h2>2. სურათის შეცვლა</h2>
+  <img id="myImage" src="https://via.placeholder.com/200x100.png?text=Image+1" alt="სურათი">
+  <br>
+  <button id="changeImageBtn">შეცვალე სურათი</button>
+
+  <!-- 3. ტექსტის დამალვა/გამოჩენა -->
+  <h2>3. ტექსტის დამალვა/გამოჩენა</h2>
+  <button id="toggleTextBtn">დამალე/გამოაჩინე ტექსტი</button>
+  <div id="toggleText">ეს არის დასამალ/გამოსაჩენი ტექსტი</div>
+
+  <!-- 4. მრიცხველის გაზრდა -->
+  <h2>4. მრიცხველი</h2>
+  <button id="incrementBtn">მრიცხველის გაზრდა</button>
+  <span id="counter">0</span>
+
+  <!-- 5. ქვიზი -->
+  <h2>5. ქვიზი</h2>
+  <p>რომელი ცხოველი აბღავის?</p>
+  <label><input type="radio" name="quiz" value="cat"> კატა</label><br>
+  <label><input type="radio" name="quiz" value="dog"> ძაღლი</label><br>
+  <label><input type="radio" name="quiz" value="lion"> ლომი</label><br>
+  <button id="checkAnswerBtn">შემოწმება</button>
+  <p id="quizResult"></p>
+
+  <script>
+    // 1. შემთხვევითი ფერის შეცვლა
+    document.getElementById("colorBtn").addEventListener("click", function () {
+      const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+      document.getElementById("colorBox").style.backgroundColor = randomColor;
+    });
+
+    // 2. სურათის შეცვლა
+    let imageSwitched = false;
+    document.getElementById("changeImageBtn").addEventListener("click", function () {
+      const img = document.getElementById("myImage");
+      if (!imageSwitched) {
+        img.src = "https://via.placeholder.com/200x100.png?text=Image+2";
+        imageSwitched = true;
+      } else {
+        img.src = "https://via.placeholder.com/200x100.png?text=Image+1";
+        imageSwitched = false;
+      }
+    });
+
+    // 3. ტექსტის toggle
+    document.getElementById("toggleTextBtn").addEventListener("click", function () {
+      const textDiv = document.getElementById("toggleText");
+      textDiv.style.display = textDiv.style.display === "none" ? "block" : "none";
+    });
+
+    // 4. მრიცხველი
+    let count = 0;
+    document.getElementById("incrementBtn").addEventListener("click", function () {
+      count++;
+      document.getElementById("counter").textContent = count;
+    });
+
+    // 5. ქვიზის შემოწმება
+    document.getElementById("checkAnswerBtn").addEventListener("click", function () {
+      const selected = document.querySelector('input[name="quiz"]:checked');
+      const result = document.getElementById("quizResult");
+      if (!selected) {
+        result.textContent = "გთხოვ, აირჩიე პასუხი!";
+        result.style.color = "orange";
+        return;
+      }
+
+      if (selected.value === "lion") {
+        result.textContent = "სწორია! ✅";
+        result.style.color = "green";
+      } else {
+        result.textContent = "არასწორია ❌";
+        result.style.color = "red";
+      }
+    });
+  </script>
+
+</body>
+</html>
