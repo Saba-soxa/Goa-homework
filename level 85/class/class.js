@@ -1,0 +1,14 @@
+const mixedData = [10, "apple", 5, "banana", 20, "cherry"];
+const firstString = mixedData.find(item => typeof item === "string");
+console.log("First string:", firstString);
+const fruits = ["mango", "orange"];
+const isFruitsArray = Array.isArray(fruits);
+console.log("Is 'fruits' an array?", isFruitsArray);
+const stringsOnly = mixedData.filter(item => typeof item === "string");
+const stringLengths = Array.from(stringsOnly, str => str.length);
+console.log("Lengths of strings:", stringLengths);
+const reversedData = [...mixedData].reverse();
+console.log("Reversed array:", reversedData);
+const numbersOnly = mixedData.filter(item => typeof item === "number");
+const sortedNumbers = numbersOnly.sort((a, b) => a - b);
+console.log("Sorted numbers:", sortedNumbers);
